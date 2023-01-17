@@ -28,6 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+CREATED_APPS = [
+    'products'
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+] + CREATED_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
